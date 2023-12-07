@@ -7,6 +7,8 @@ import Image from "../../../../node_modules/next/image";
 import { MENU } from "./sidebar.data";
 import styles from "./Sidebar.module.scss";
 
+const isLoggedIn = false;
+
 export default function Sidebar() {
   const pathname = usePathname();
   return (
