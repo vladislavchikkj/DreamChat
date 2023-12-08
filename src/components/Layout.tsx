@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import { Toaster } from "react-hot-toast";
 import styles from "./Layout.module.scss";
 import Sidebar from "./layout/sidebar/Sidebar";
 
@@ -7,6 +8,7 @@ export default function LayoutClient({ children }: PropsWithChildren<unknown>) {
     <main className={styles.layout}>
       <Sidebar />
       <section>{children}</section>
+      <Toaster position="top-right" />
     </main>
   );
 }

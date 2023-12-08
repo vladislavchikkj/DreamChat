@@ -1,5 +1,5 @@
 import Chat from "@/components/layout/screens/chats/Chat";
-import ChatsList from "@/components/layout/screens/chats/ChatsList";
+import ChatsList from "@/components/layout/screens/chats/list/ChatsList";
 import CurrentUser from "@/components/layout/screens/chats/CurrentUser";
 
 export default function ChatsPage() {

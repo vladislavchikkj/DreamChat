@@ -1,4 +1,5 @@
 import LayoutClient from "@/components/layout";
+import MainProvider from "@/providers/Providers";
 import type { Metadata } from "next";
 
 import { Viewport } from "next";
@@ -26,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <LayoutClient>{children}</LayoutClient>
+        <MainProvider>
+          <LayoutClient>{children}</LayoutClient>
+        </MainProvider>
       </body>
     </html>
   );
